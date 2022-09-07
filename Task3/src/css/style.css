@@ -1,0 +1,89 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 3.5em 1fr;
+  min-height: 100%;
+  height: auto;
+}
+.grid-container header {
+  background-color: #008B8B;
+  display: flex;
+  align-items: center;
+  height: 3.5em;
+}
+.grid-container header h1 {
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  margin: 0 0 0 3em;
+  font-size: 1em;
+}
+.grid-container .boards-line {
+  display: flex;
+  background-color: #019E9E;
+  overflow-x: scroll;
+}
+.grid-container .boards-line .board {
+  min-width: 300px;
+  max-width: 400px;
+  margin: 1.2em;
+  padding: 1em;
+  background-color: #DCDCDC;
+  border-radius: 5px;
+  max-height: calc(100vh * 0.84);
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+.grid-container .boards-line .board .board-name {
+  margin: 0 0 0.5em 0;
+  font-size: 1em;
+}
+.grid-container .boards-line .board .tasks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.grid-container .boards-line .board .tasks-list .task {
+  padding: 1em 1em 0.5em 1em;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.grid-container .boards-line .board .tasks-list .task .task-text {
+  margin: 0 0 1em 0;
+}
+.grid-container .boards-line .board .tasks-list .task .bottom-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.grid-container .boards-line .board .tasks-list .task .bottom-line .icons {
+  display: flex;
+  width: 70%;
+  gap: 15px;
+}
+.grid-container .boards-line .board .tasks-list .task .bottom-line .icons .icon {
+  display: flex;
+}
+.grid-container .boards-line .board .tasks-list .task .bottom-line .icons .icon p {
+  margin: 0 0 0 5px;
+}
+.grid-container .boards-line .board .tasks-list .task .bottom-line .avatar {
+  height: 30px;
+}
+.grid-container .boards-line .board .tasks-list .task .bottom-line-el {
+  height: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */

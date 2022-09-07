@@ -1,0 +1,885 @@
+@import 'variables';
+
+html {
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    margin: 0;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 3.5em 1fr;
+
+    min-height: 100%;
+    height: auto;
+
+    header{
+        background-color: $dark-color;
+        display: flex;
+        align-items: center;
+        height: 3.5em;
+
+        h1{
+            text-transform: uppercase;
+            text-align: center;
+            color: white;
+            margin: 0 0 0 3em;
+            font-size: 1em;
+        }
+    }
+
+    .boards-line{
+        display: flex;
+        background-color: $light-color;
+        overflow-x: scroll;
+
+        .board{
+            min-width: 300px;
+            max-width: 400px;
+            margin: 1.2em;
+            padding: 1em;
+            background-color: $board-color;
+            border-radius: 5px;
+            max-height: calc(100vh * 0.84);
+            overflow-y: scroll;
+
+            display: flex;
+            flex-direction: column;
+
+            .board-name{
+                margin: 0 0 0.5em 0;
+                font-size: 1em;
+            }
+
+            .tasks-list{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .task{
+                    padding: 1em 1em 0.5em 1em;
+                    background-color: white;
+                    border-radius: 5px;
+                    display: flex;
+                    flex-direction: column;
+
+                    .task-text{
+                        margin: 0 0 1em 0;
+                    }
+
+                    .bottom-line{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .icons{
+                            display: flex;
+                            width: 70%;
+                            gap: 15px;
+
+                            .icon{
+                                display: flex;
+
+                                p{
+                                    margin: 0 0 0 5px;
+                                }
+                            }
+                        }
+    
+                        .avatar{
+                            height: 30px;
+                        }
+                    }
+                    
+                    .bottom-line-el{
+                        height: 15px;
+                    }
+                }
+            }
+        }
+
+        .board{
+            min-width: 300px;
+            max-width: 400px;
+            margin: 1.2em;
+            padding: 1em;
+            background-color: $board-color;
+            border-radius: 5px;
+            max-height: calc(100vh * 0.84);
+            overflow-y: scroll;
+
+            display: flex;
+            flex-direction: column;
+
+            .board-name{
+                margin: 0 0 0.5em 0;
+                font-size: 1em;
+            }
+
+            .tasks-list{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .task{
+                    padding: 1em 1em 0.5em 1em;
+                    background-color: white;
+                    border-radius: 5px;
+                    display: flex;
+                    flex-direction: column;
+
+                    .task-text{
+                        margin: 0 0 1em 0;
+                    }
+
+                    .bottom-line{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .icons{
+                            display: flex;
+                            width: 70%;
+                            gap: 15px;
+
+                            .icon{
+                                display: flex;
+
+                                p{
+                                    margin: 0 0 0 5px;
+                                }
+                            }
+                        }
+    
+                        .avatar{
+                            height: 30px;
+                        }
+                    }
+                    
+                    .bottom-line-el{
+                        height: 15px;
+                    }
+                }
+            }
+        }
+
+        .board{
+            min-width: 300px;
+            max-width: 400px;
+            margin: 1.2em;
+            padding: 1em;
+            background-color: $board-color;
+            border-radius: 5px;
+            max-height: calc(100vh * 0.84);
+            overflow-y: scroll;
+
+            display: flex;
+            flex-direction: column;
+
+            .board-name{
+                margin: 0 0 0.5em 0;
+                font-size: 1em;
+            }
+
+            .tasks-list{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .task{
+                    padding: 1em 1em 0.5em 1em;
+                    background-color: white;
+                    border-radius: 5px;
+                    display: flex;
+                    flex-direction: column;
+
+                    .task-text{
+                        margin: 0 0 1em 0;
+                    }
+
+                    .bottom-line{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .icons{
+                            display: flex;
+                            width: 70%;
+                            gap: 15px;
+
+                            .icon{
+                                display: flex;
+
+                                p{
+                                    margin: 0 0 0 5px;
+                                }
+                            }
+                        }
+    
+                        .avatar{
+                            height: 30px;
+                        }
+                    }
+                    
+                    .bottom-line-el{
+                        height: 15px;
+                    }
+                }
+            }
+        }
+
+        .board{
+            min-width: 300px;
+            max-width: 400px;
+            margin: 1.2em;
+            padding: 1em;
+            background-color: $board-color;
+            border-radius: 5px;
+            max-height: calc(100vh * 0.84);
+            overflow-y: scroll;
+
+            display: flex;
+            flex-direction: column;
+
+            .board-name{
+                margin: 0 0 0.5em 0;
+                font-size: 1em;
+            }
+
+            .tasks-list{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .task{
+                    padding: 1em 1em 0.5em 1em;
+                    background-color: white;
+                    border-radius: 5px;
+                    display: flex;
+                    flex-direction: column;
+
+                    .task-text{
+                        margin: 0 0 1em 0;
+                    }
+
+                    .bottom-line{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .icons{
+                            display: flex;
+                            width: 70%;
+                            gap: 15px;
+
+                            .icon{
+                                display: flex;
+
+                                p{
+                                    margin: 0 0 0 5px;
+                                }
+                            }
+                        }
+    
+                        .avatar{
+                            height: 30px;
+                        }
+                    }
+                    
+                    .bottom-line-el{
+                        height: 15px;
+                    }
+                }
+            }
+        }
+
+        .board{
+            min-width: 300px;
+            max-width: 400px;
+            margin: 1.2em;
+            padding: 1em;
+            background-color: $board-color;
+            border-radius: 5px;
+            max-height: calc(100vh * 0.84);
+            overflow-y: scroll;
+
+            display: flex;
+            flex-direction: column;
+
+            .board-name{
+                margin: 0 0 0.5em 0;
+                font-size: 1em;
+            }
+
+            .tasks-list{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .task{
+                    padding: 1em 1em 0.5em 1em;
+                    background-color: white;
+                    border-radius: 5px;
+                    display: flex;
+                    flex-direction: column;
+
+                    .task-text{
+                        margin: 0 0 1em 0;
+                    }
+
+                    .bottom-line{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .icons{
+                            display: flex;
+                            width: 70%;
+                            gap: 15px;
+
+                            .icon{
+                                display: flex;
+
+                                p{
+                                    margin: 0 0 0 5px;
+                                }
+                            }
+                        }
+    
+                        .avatar{
+                            height: 30px;
+                        }
+                    }
+                    
+                    .bottom-line-el{
+                        height: 15px;
+                    }
+                }
+            }
+        }
+
+        .board{
+            min-width: 300px;
+            max-width: 400px;
+            margin: 1.2em;
+            padding: 1em;
+            background-color: $board-color;
+            border-radius: 5px;
+            max-height: calc(100vh * 0.84);
+            overflow-y: scroll;
+
+            display: flex;
+            flex-direction: column;
+
+            .board-name{
+                margin: 0 0 0.5em 0;
+                font-size: 1em;
+            }
+
+            .tasks-list{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .task{
+                    padding: 1em 1em 0.5em 1em;
+                    background-color: white;
+                    border-radius: 5px;
+                    display: flex;
+                    flex-direction: column;
+
+                    .task-text{
+                        margin: 0 0 1em 0;
+                    }
+
+                    .bottom-line{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .icons{
+                            display: flex;
+                            width: 70%;
+                            gap: 15px;
+
+                            .icon{
+                                display: flex;
+
+                                p{
+                                    margin: 0 0 0 5px;
+                                }
+                            }
+                        }
+    
+                        .avatar{
+                            height: 30px;
+                        }
+                    }
+                    
+                    .bottom-line-el{
+                        height: 15px;
+                    }
+                }
+            }
+        }
+
+        .board{
+            min-width: 300px;
+            max-width: 400px;
+            margin: 1.2em;
+            padding: 1em;
+            background-color: $board-color;
+            border-radius: 5px;
+            max-height: calc(100vh * 0.84);
+            overflow-y: scroll;
+
+            display: flex;
+            flex-direction: column;
+
+            .board-name{
+                margin: 0 0 0.5em 0;
+                font-size: 1em;
+            }
+
+            .tasks-list{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .task{
+                    padding: 1em 1em 0.5em 1em;
+                    background-color: white;
+                    border-radius: 5px;
+                    display: flex;
+                    flex-direction: column;
+
+                    .task-text{
+                        margin: 0 0 1em 0;
+                    }
+
+                    .bottom-line{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .icons{
+                            display: flex;
+                            width: 70%;
+                            gap: 15px;
+
+                            .icon{
+                                display: flex;
+
+                                p{
+                                    margin: 0 0 0 5px;
+                                }
+                            }
+                        }
+    
+                        .avatar{
+                            height: 30px;
+                        }
+                    }
+                    
+                    .bottom-line-el{
+                        height: 15px;
+                    }
+                }
+            }
+        }
+
+        .board{
+            min-width: 300px;
+            max-width: 400px;
+            margin: 1.2em;
+            padding: 1em;
+            background-color: $board-color;
+            border-radius: 5px;
+            max-height: calc(100vh * 0.84);
+            overflow-y: scroll;
+
+            display: flex;
+            flex-direction: column;
+
+            .board-name{
+                margin: 0 0 0.5em 0;
+                font-size: 1em;
+            }
+
+            .tasks-list{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .task{
+                    padding: 1em 1em 0.5em 1em;
+                    background-color: white;
+                    border-radius: 5px;
+                    display: flex;
+                    flex-direction: column;
+
+                    .task-text{
+                        margin: 0 0 1em 0;
+                    }
+
+                    .bottom-line{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .icons{
+                            display: flex;
+                            width: 70%;
+                            gap: 15px;
+
+                            .icon{
+                                display: flex;
+
+                                p{
+                                    margin: 0 0 0 5px;
+                                }
+                            }
+                        }
+    
+                        .avatar{
+                            height: 30px;
+                        }
+                    }
+                    
+                    .bottom-line-el{
+                        height: 15px;
+                    }
+                }
+            }
+        }
+
+        .board{
+            min-width: 300px;
+            max-width: 400px;
+            margin: 1.2em;
+            padding: 1em;
+            background-color: $board-color;
+            border-radius: 5px;
+            max-height: calc(100vh * 0.84);
+            overflow-y: scroll;
+
+            display: flex;
+            flex-direction: column;
+
+            .board-name{
+                margin: 0 0 0.5em 0;
+                font-size: 1em;
+            }
+
+            .tasks-list{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .task{
+                    padding: 1em 1em 0.5em 1em;
+                    background-color: white;
+                    border-radius: 5px;
+                    display: flex;
+                    flex-direction: column;
+
+                    .task-text{
+                        margin: 0 0 1em 0;
+                    }
+
+                    .bottom-line{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .icons{
+                            display: flex;
+                            width: 70%;
+                            gap: 15px;
+
+                            .icon{
+                                display: flex;
+
+                                p{
+                                    margin: 0 0 0 5px;
+                                }
+                            }
+                        }
+    
+                        .avatar{
+                            height: 30px;
+                        }
+                    }
+                    
+                    .bottom-line-el{
+                        height: 15px;
+                    }
+                }
+            }
+        }
+
+        .board{
+            min-width: 300px;
+            max-width: 400px;
+            margin: 1.2em;
+            padding: 1em;
+            background-color: $board-color;
+            border-radius: 5px;
+            max-height: calc(100vh * 0.84);
+            overflow-y: scroll;
+
+            display: flex;
+            flex-direction: column;
+
+            .board-name{
+                margin: 0 0 0.5em 0;
+                font-size: 1em;
+            }
+
+            .tasks-list{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .task{
+                    padding: 1em 1em 0.5em 1em;
+                    background-color: white;
+                    border-radius: 5px;
+                    display: flex;
+                    flex-direction: column;
+
+                    .task-text{
+                        margin: 0 0 1em 0;
+                    }
+
+                    .bottom-line{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .icons{
+                            display: flex;
+                            width: 70%;
+                            gap: 15px;
+
+                            .icon{
+                                display: flex;
+
+                                p{
+                                    margin: 0 0 0 5px;
+                                }
+                            }
+                        }
+    
+                        .avatar{
+                            height: 30px;
+                        }
+                    }
+                    
+                    .bottom-line-el{
+                        height: 15px;
+                    }
+                }
+            }
+        }
+
+        .board{
+            min-width: 300px;
+            max-width: 400px;
+            margin: 1.2em;
+            padding: 1em;
+            background-color: $board-color;
+            border-radius: 5px;
+            max-height: calc(100vh * 0.84);
+            overflow-y: scroll;
+
+            display: flex;
+            flex-direction: column;
+
+            .board-name{
+                margin: 0 0 0.5em 0;
+                font-size: 1em;
+            }
+
+            .tasks-list{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .task{
+                    padding: 1em 1em 0.5em 1em;
+                    background-color: white;
+                    border-radius: 5px;
+                    display: flex;
+                    flex-direction: column;
+
+                    .task-text{
+                        margin: 0 0 1em 0;
+                    }
+
+                    .bottom-line{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .icons{
+                            display: flex;
+                            width: 70%;
+                            gap: 15px;
+
+                            .icon{
+                                display: flex;
+
+                                p{
+                                    margin: 0 0 0 5px;
+                                }
+                            }
+                        }
+    
+                        .avatar{
+                            height: 30px;
+                        }
+                    }
+                    
+                    .bottom-line-el{
+                        height: 15px;
+                    }
+                }
+            }
+        }
+
+        .board{
+            min-width: 300px;
+            max-width: 400px;
+            margin: 1.2em;
+            padding: 1em;
+            background-color: $board-color;
+            border-radius: 5px;
+            max-height: calc(100vh * 0.84);
+            overflow-y: scroll;
+
+            display: flex;
+            flex-direction: column;
+
+            .board-name{
+                margin: 0 0 0.5em 0;
+                font-size: 1em;
+            }
+
+            .tasks-list{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .task{
+                    padding: 1em 1em 0.5em 1em;
+                    background-color: white;
+                    border-radius: 5px;
+                    display: flex;
+                    flex-direction: column;
+
+                    .task-text{
+                        margin: 0 0 1em 0;
+                    }
+
+                    .bottom-line{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .icons{
+                            display: flex;
+                            width: 70%;
+                            gap: 15px;
+
+                            .icon{
+                                display: flex;
+
+                                p{
+                                    margin: 0 0 0 5px;
+                                }
+                            }
+                        }
+    
+                        .avatar{
+                            height: 30px;
+                        }
+                    }
+                    
+                    .bottom-line-el{
+                        height: 15px;
+                    }
+                }
+            }
+        }
+
+        .board{
+            min-width: 300px;
+            max-width: 400px;
+            margin: 1.2em;
+            padding: 1em;
+            background-color: $board-color;
+            border-radius: 5px;
+            max-height: calc(100vh * 0.84);
+            overflow-y: scroll;
+
+            display: flex;
+            flex-direction: column;
+
+            .board-name{
+                margin: 0 0 0.5em 0;
+                font-size: 1em;
+            }
+
+            .tasks-list{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .task{
+                    padding: 1em 1em 0.5em 1em;
+                    background-color: white;
+                    border-radius: 5px;
+                    display: flex;
+                    flex-direction: column;
+
+                    .task-text{
+                        margin: 0 0 1em 0;
+                    }
+
+                    .bottom-line{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        .icons{
+                            display: flex;
+                            width: 70%;
+                            gap: 15px;
+
+                            .icon{
+                                display: flex;
+
+                                p{
+                                    margin: 0 0 0 5px;
+                                }
+                            }
+                        }
+    
+                        .avatar{
+                            height: 30px;
+                        }
+                    }
+                    
+                    .bottom-line-el{
+                        height: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

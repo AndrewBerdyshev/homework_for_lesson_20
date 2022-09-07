@@ -1,0 +1,57 @@
+.endless-line{
+    display: flex;
+    flex-direction: column;
+
+    .message-info{
+        display: grid;
+        grid-template-columns: 25% 50% 25%;
+        grid-template-rows: auto;
+
+        .message{
+            background-color: var(--message-color);
+            padding: 1em;
+            grid-area: message-area;
+        }
+
+        .user-info{
+            display: flex;
+            justify-content: flex-end;
+            grid-area: user-info-area;
+
+            .name-time-column{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-end;
+
+                .name, .time{
+                    margin: 0;
+                }
+
+                .time{
+                    font-size: 0.8em;
+                    color: #ABA09A;
+                }
+            }
+        }
+    }
+
+    .left{
+        grid-template-areas: "user-info-area message-area .";
+
+        .message{
+            border-radius: 18px 18px 18px 0;
+        }
+    }
+
+    .right{
+        grid-template-areas: ". message-area user-info-area";
+        .user-info{
+            flex-direction: row-reverse;
+        }
+
+        .message{
+            border-radius: 18px 18px 0 18px;
+        }
+    }
+}

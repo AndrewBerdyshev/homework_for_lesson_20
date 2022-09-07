@@ -1,0 +1,19 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: auto;
+    background-color: #ADD8E6;
+
+    .container-column{
+        .column-item{
+            margin: 5% 2.5% 5% 5%;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+
+            h2, p{
+                padding: 1em;
+            }
+        }
+    }
+}

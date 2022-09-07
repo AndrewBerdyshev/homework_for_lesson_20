@@ -1,0 +1,49 @@
+.endless-line {
+  display: flex;
+  flex-direction: column;
+}
+.endless-line .message-info {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: auto;
+}
+.endless-line .message-info .message {
+  background-color: var(--message-color);
+  padding: 1em;
+  grid-area: message-area;
+}
+.endless-line .message-info .user-info {
+  display: flex;
+  justify-content: flex-end;
+  grid-area: user-info-area;
+}
+.endless-line .message-info .user-info .name-time-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.endless-line .message-info .user-info .name-time-column .name, .endless-line .message-info .user-info .name-time-column .time {
+  margin: 0;
+}
+.endless-line .message-info .user-info .name-time-column .time {
+  font-size: 0.8em;
+  color: #ABA09A;
+}
+.endless-line .left {
+  grid-template-areas: "user-info-area message-area .";
+}
+.endless-line .left .message {
+  border-radius: 18px 18px 18px 0;
+}
+.endless-line .right {
+  grid-template-areas: ". message-area user-info-area";
+}
+.endless-line .right .user-info {
+  flex-direction: row-reverse;
+}
+.endless-line .right .message {
+  border-radius: 18px 18px 0 18px;
+}
+
+/*# sourceMappingURL=style.css.map */
